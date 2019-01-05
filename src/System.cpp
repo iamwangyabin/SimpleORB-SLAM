@@ -1,10 +1,10 @@
 #include "System.h"
-#include "Converter.h"
+//#include "Converter.h"
 #include <thread>
 #include <pangolin/pangolin.h>
 #include <iomanip>
 
-namespace ORB_SLAM2
+namespace Simple_SLAM
 {
 
 System::System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor,
@@ -59,16 +59,16 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     mpFrameDrawer = new FrameDrawer(mpMap);
     mpMapDrawer = new MapDrawer(mpMap, strSettingsFile);
 
-    //Initialize the Tracking thread
+    //初始化Tracking线程，Tracking线程将会运行在主线程上
     //(it will live in the main thread of execution, the one that called this constructor)
     mpTracker = new Tracking(this, mpVocabulary, mpFrameDrawer, mpMapDrawer,
                              mpMap, mpKeyFrameDatabase, strSettingsFile, mSensor);
 
-    //Initialize the Local Mapping thread and launch
+    //初始化LocalMapping线程并启动
     mpLocalMapper = new LocalMapping(mpMap, mSensor==MONOCULAR);
     mptLocalMapping = new thread(&ORB_SLAM2::LocalMapping::Run,mpLocalMapper);
 
-    //Initialize the Loop Closing thread and launch
+    //I初始化LoopClosing线程并启动
     mpLoopCloser = new LoopClosing(mpMap, mpKeyFrameDatabase, mpVocabulary, mSensor!=MONOCULAR);
     mptLoopClosing = new thread(&ORB_SLAM2::LoopClosing::Run, mpLoopCloser);
 
