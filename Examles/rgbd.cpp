@@ -15,12 +15,6 @@ void LoadImages(const string &strAssociationFilename, vector<string> &vstrImageF
 
 int main(int argc, char **argv)
 {
-    if(argc != 5)
-    {
-        cerr << endl << "Usage: ./rgbd_tum path_to_vocabulary path_to_settings path_to_sequence path_to_association" << endl;
-        return 1;
-    }
-
     // 获得数据集的地址
     vector<string> vstrImageFilenamesRGB;
     vector<string> vstrImageFilenamesD;
@@ -28,20 +22,9 @@ int main(int argc, char **argv)
     string strAssociationFilename = string(argv[4]);
     LoadImages(strAssociationFilename, vstrImageFilenamesRGB, vstrImageFilenamesD, vTimestamps);
 
-    // 检查一下RGB数据是否同D数据数量上一致
-    int nImages = vstrImageFilenamesRGB.size();
-    if(vstrImageFilenamesRGB.empty())
-    {
-        cerr << endl << "No images found in provided path." << endl;
-        return 1;
-    }
-    else if(vstrImageFilenamesD.size()!=vstrImageFilenamesRGB.size())
-    {
-        cerr << endl << "Different number of images for rgb and depth." << endl;
-        return 1;
-    }
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
+    // 前面两个参数就是
     ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::RGBD,true);
 
     // Vector for tracking time statistics

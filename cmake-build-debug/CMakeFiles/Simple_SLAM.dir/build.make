@@ -70,9 +70,22 @@ CMakeFiles/Simple_SLAM.dir/src/System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple_SLAM.dir/src/System.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/workspace/SimpleORB-SLAM/src/System.cpp -o CMakeFiles/Simple_SLAM.dir/src/System.cpp.s
 
+CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o: CMakeFiles/Simple_SLAM.dir/flags.make
+CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o: ../src/Libfreenect2Opencv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o -c /home/wang/workspace/SimpleORB-SLAM/src/Libfreenect2Opencv.cpp
+
+CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/workspace/SimpleORB-SLAM/src/Libfreenect2Opencv.cpp > CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.i
+
+CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/workspace/SimpleORB-SLAM/src/Libfreenect2Opencv.cpp -o CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.s
+
 CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o: CMakeFiles/Simple_SLAM.dir/flags.make
 CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o: ../src/ORBextractor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o -c /home/wang/workspace/SimpleORB-SLAM/src/ORBextractor.cpp
 
 CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.s: cmake_force
 
 CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o: CMakeFiles/Simple_SLAM.dir/flags.make
 CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o: ../src/Tracking.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o -c /home/wang/workspace/SimpleORB-SLAM/src/Tracking.cpp
 
 CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.i: cmake_force
@@ -99,6 +112,7 @@ CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.s: cmake_force
 # Object files for target Simple_SLAM
 Simple_SLAM_OBJECTS = \
 "CMakeFiles/Simple_SLAM.dir/src/System.cpp.o" \
+"CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o" \
 "CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o" \
 "CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o"
 
@@ -106,6 +120,7 @@ Simple_SLAM_OBJECTS = \
 Simple_SLAM_EXTERNAL_OBJECTS =
 
 ../lib/libSimple_SLAM.so: CMakeFiles/Simple_SLAM.dir/src/System.cpp.o
+../lib/libSimple_SLAM.so: CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o
 ../lib/libSimple_SLAM.so: CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o
 ../lib/libSimple_SLAM.so: CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o
 ../lib/libSimple_SLAM.so: CMakeFiles/Simple_SLAM.dir/build.make
@@ -136,7 +151,7 @@ Simple_SLAM_EXTERNAL_OBJECTS =
 ../lib/libSimple_SLAM.so: /usr/lib/x86_64-linux-gnu/libpng.so
 ../lib/libSimple_SLAM.so: /usr/lib/x86_64-linux-gnu/libz.so
 ../lib/libSimple_SLAM.so: CMakeFiles/Simple_SLAM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libSimple_SLAM.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library ../lib/libSimple_SLAM.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Simple_SLAM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

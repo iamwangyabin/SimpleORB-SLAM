@@ -50,6 +50,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 #
 add_library(${PROJECT_NAME} SHARED
         src/System.cpp
+        src/Libfreenect2Opencv.cpp
 #        src/Tracking.cc
 #        src/LocalMapping.cc
 #        src/LoopClosing.cc
@@ -68,7 +69,7 @@ add_library(${PROJECT_NAME} SHARED
 #        src/Sim3Solver.cc
 #        src/Initializer.cc
 #        src/Viewer.cc
-        src/ORBextractor.cpp include/ORBextractor.h include/Tracking.h include/Viewer.h include/FrameDrawer.h include/Map.h include/LocalMapping.h include/LoopClosing.h include/Frame.h src/Tracking.cpp)
+        src/ORBextractor.cpp include/ORBextractor.h include/Tracking.h include/Viewer.h include/FrameDrawer.h include/Map.h include/LocalMapping.h include/LoopClosing.h include/Frame.h src/Tracking.cpp src/Libfreenect2Opencv.cpp include/Libfreenect2Opencv.h)
 
 target_link_libraries(${PROJECT_NAME}
         ${OpenCV_LIBS}
@@ -80,12 +81,12 @@ target_link_libraries(${PROJECT_NAME}
 #
 ## Build examples
 #
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/)
 #
-#add_executable(rgbd_tum
-#        Examples/RGB-D/rgbd_tum.cc)
-#target_link_libraries(rgbd_tum ${PROJECT_NAME})
-#
+add_executable(rgbd
+        Examles/rgbd.cpp)
+target_link_libraries(rgbd ${PROJECT_NAME})
+
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo)
 #
 #add_executable(stereo_kitti

@@ -4,10 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wang/workspace/SimpleORB-SLAM/src/Libfreenect2Opencv.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o"
-  "/home/wang/workspace/SimpleORB-SLAM/src/ORBextractor.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/Simple_SLAM.dir/src/ORBextractor.cpp.o"
-  "/home/wang/workspace/SimpleORB-SLAM/src/System.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/Simple_SLAM.dir/src/System.cpp.o"
-  "/home/wang/workspace/SimpleORB-SLAM/src/Tracking.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/Simple_SLAM.dir/src/Tracking.cpp.o"
+  "/home/wang/workspace/SimpleORB-SLAM/Examles/rgbd.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -29,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/Simple_SLAM.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

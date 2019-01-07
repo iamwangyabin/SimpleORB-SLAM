@@ -37,7 +37,7 @@ namespace Simple_SLAM
         cv::Mat imDepth = imD;
 
         cv::cvtColor()
-        if(mImGray.channels()==3)
+        if(3 == mImGray.channels())
         {
             // 没什么卵用，就是看图像rgb的顺序
             cvtColor(mImGray, mImGray, mbRGB ? CV_RGB2GRAY : CV_BGR2GRAY);

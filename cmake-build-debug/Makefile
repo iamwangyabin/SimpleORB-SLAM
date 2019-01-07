@@ -123,6 +123,73 @@ Simple_SLAM/fast:
 	$(MAKE) -f CMakeFiles/Simple_SLAM.dir/build.make CMakeFiles/Simple_SLAM.dir/build
 .PHONY : Simple_SLAM/fast
 
+#=============================================================================
+# Target rules for targets named rgbd
+
+# Build rule for target.
+rgbd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rgbd
+.PHONY : rgbd
+
+# fast build rule for target.
+rgbd/fast:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/build
+.PHONY : rgbd/fast
+
+Examles/rgbd.o: Examles/rgbd.cpp.o
+
+.PHONY : Examles/rgbd.o
+
+# target to build an object file
+Examles/rgbd.cpp.o:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o
+.PHONY : Examles/rgbd.cpp.o
+
+Examles/rgbd.i: Examles/rgbd.cpp.i
+
+.PHONY : Examles/rgbd.i
+
+# target to preprocess a source file
+Examles/rgbd.cpp.i:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examles/rgbd.cpp.i
+.PHONY : Examles/rgbd.cpp.i
+
+Examles/rgbd.s: Examles/rgbd.cpp.s
+
+.PHONY : Examles/rgbd.s
+
+# target to generate assembly for a file
+Examles/rgbd.cpp.s:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examles/rgbd.cpp.s
+.PHONY : Examles/rgbd.cpp.s
+
+src/Libfreenect2Opencv.o: src/Libfreenect2Opencv.cpp.o
+
+.PHONY : src/Libfreenect2Opencv.o
+
+# target to build an object file
+src/Libfreenect2Opencv.cpp.o:
+	$(MAKE) -f CMakeFiles/Simple_SLAM.dir/build.make CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.o
+.PHONY : src/Libfreenect2Opencv.cpp.o
+
+src/Libfreenect2Opencv.i: src/Libfreenect2Opencv.cpp.i
+
+.PHONY : src/Libfreenect2Opencv.i
+
+# target to preprocess a source file
+src/Libfreenect2Opencv.cpp.i:
+	$(MAKE) -f CMakeFiles/Simple_SLAM.dir/build.make CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.i
+.PHONY : src/Libfreenect2Opencv.cpp.i
+
+src/Libfreenect2Opencv.s: src/Libfreenect2Opencv.cpp.s
+
+.PHONY : src/Libfreenect2Opencv.s
+
+# target to generate assembly for a file
+src/Libfreenect2Opencv.cpp.s:
+	$(MAKE) -f CMakeFiles/Simple_SLAM.dir/build.make CMakeFiles/Simple_SLAM.dir/src/Libfreenect2Opencv.cpp.s
+.PHONY : src/Libfreenect2Opencv.cpp.s
+
 src/ORBextractor.o: src/ORBextractor.cpp.o
 
 .PHONY : src/ORBextractor.o
@@ -213,6 +280,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Simple_SLAM"
 	@echo "... edit_cache"
+	@echo "... rgbd"
+	@echo "... Examles/rgbd.o"
+	@echo "... Examles/rgbd.i"
+	@echo "... Examles/rgbd.s"
+	@echo "... src/Libfreenect2Opencv.o"
+	@echo "... src/Libfreenect2Opencv.i"
+	@echo "... src/Libfreenect2Opencv.s"
 	@echo "... src/ORBextractor.o"
 	@echo "... src/ORBextractor.i"
 	@echo "... src/ORBextractor.s"
