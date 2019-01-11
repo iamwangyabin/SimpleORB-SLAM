@@ -158,7 +158,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wang/workspace/SimpleORB-SLAM/Examles/rgbd.cpp">
+		<Unit filename="/home/wang/workspace/SimpleORB-SLAM/Examples/rgbd.cpp">
 			<Option target="rgbd"/>
 		</Unit>
 		<Unit filename="/home/wang/workspace/SimpleORB-SLAM/include/Frame.h">

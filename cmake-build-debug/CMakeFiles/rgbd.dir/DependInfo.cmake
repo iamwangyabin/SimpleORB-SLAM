@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wang/workspace/SimpleORB-SLAM/Examles/rgbd.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o"
+  "/home/wang/workspace/SimpleORB-SLAM/Examples/rgbd.cpp" "/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

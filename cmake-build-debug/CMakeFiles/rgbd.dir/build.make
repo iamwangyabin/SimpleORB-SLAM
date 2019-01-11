@@ -57,27 +57,27 @@ include CMakeFiles/rgbd.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/rgbd.dir/flags.make
 
-CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o: CMakeFiles/rgbd.dir/flags.make
-CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o: ../Examles/rgbd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o -c /home/wang/workspace/SimpleORB-SLAM/Examles/rgbd.cpp
+CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o: CMakeFiles/rgbd.dir/flags.make
+CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o: ../Examples/rgbd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wang/workspace/SimpleORB-SLAM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o -c /home/wang/workspace/SimpleORB-SLAM/Examples/rgbd.cpp
 
-CMakeFiles/rgbd.dir/Examles/rgbd.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgbd.dir/Examles/rgbd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/workspace/SimpleORB-SLAM/Examles/rgbd.cpp > CMakeFiles/rgbd.dir/Examles/rgbd.cpp.i
+CMakeFiles/rgbd.dir/Examples/rgbd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgbd.dir/Examples/rgbd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/workspace/SimpleORB-SLAM/Examples/rgbd.cpp > CMakeFiles/rgbd.dir/Examples/rgbd.cpp.i
 
-CMakeFiles/rgbd.dir/Examles/rgbd.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd.dir/Examles/rgbd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/workspace/SimpleORB-SLAM/Examles/rgbd.cpp -o CMakeFiles/rgbd.dir/Examles/rgbd.cpp.s
+CMakeFiles/rgbd.dir/Examples/rgbd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd.dir/Examples/rgbd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/workspace/SimpleORB-SLAM/Examples/rgbd.cpp -o CMakeFiles/rgbd.dir/Examples/rgbd.cpp.s
 
 # Object files for target rgbd
 rgbd_OBJECTS = \
-"CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o"
+"CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o"
 
 # External object files for target rgbd
 rgbd_EXTERNAL_OBJECTS =
 
-../Examples/rgbd: CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o
+../Examples/rgbd: CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o
 ../Examples/rgbd: CMakeFiles/rgbd.dir/build.make
 ../Examples/rgbd: ../lib/libSimple_SLAM.so
 ../Examples/rgbd: /usr/local/lib/libopencv_shape.so.3.2.0

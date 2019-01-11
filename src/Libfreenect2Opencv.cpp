@@ -54,13 +54,13 @@ namespace Simple_SLAM {
                 std::cout << "OpenGL pipeline is not supported!" << std::endl;
             #endif
         } else if (depthProcessor == Processor::cl) {
-#ifdef LIBFREENECT2_WITH_OPENCL_SUPPORT
-            if(!m_pipeline) {
-            m_pipeline = new libfreenect2::OpenCLPacketPipeline();
-        }
-#else
-            std::cout << "OpenCL pipeline is not supported!" << std::endl;
-#endif
+            #ifdef LIBFREENECT2_WITH_OPENCL_SUPPORT
+                        if(!m_pipeline) {
+                        m_pipeline = new libfreenect2::OpenCLPacketPipeline();
+                    }
+            #else
+                        std::cout << "OpenCL pipeline is not supported!" << std::endl;
+            #endif
         }
 
         if (m_pipeline) {

@@ -84,7 +84,7 @@ target_link_libraries(${PROJECT_NAME}
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/)
 #
 add_executable(rgbd
-        Examles/rgbd.cpp)
+        Examples/rgbd.cpp)
 target_link_libraries(rgbd ${PROJECT_NAME})
 
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo)

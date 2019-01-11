@@ -136,32 +136,32 @@ rgbd/fast:
 	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/build
 .PHONY : rgbd/fast
 
-Examles/rgbd.o: Examles/rgbd.cpp.o
+Examples/rgbd.o: Examples/rgbd.cpp.o
 
-.PHONY : Examles/rgbd.o
+.PHONY : Examples/rgbd.o
 
 # target to build an object file
-Examles/rgbd.cpp.o:
-	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o
-.PHONY : Examles/rgbd.cpp.o
+Examples/rgbd.cpp.o:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o
+.PHONY : Examples/rgbd.cpp.o
 
-Examles/rgbd.i: Examles/rgbd.cpp.i
+Examples/rgbd.i: Examples/rgbd.cpp.i
 
-.PHONY : Examles/rgbd.i
+.PHONY : Examples/rgbd.i
 
 # target to preprocess a source file
-Examles/rgbd.cpp.i:
-	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examles/rgbd.cpp.i
-.PHONY : Examles/rgbd.cpp.i
+Examples/rgbd.cpp.i:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examples/rgbd.cpp.i
+.PHONY : Examples/rgbd.cpp.i
 
-Examles/rgbd.s: Examles/rgbd.cpp.s
+Examples/rgbd.s: Examples/rgbd.cpp.s
 
-.PHONY : Examles/rgbd.s
+.PHONY : Examples/rgbd.s
 
 # target to generate assembly for a file
-Examles/rgbd.cpp.s:
-	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examles/rgbd.cpp.s
-.PHONY : Examles/rgbd.cpp.s
+Examples/rgbd.cpp.s:
+	$(MAKE) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/Examples/rgbd.cpp.s
+.PHONY : Examples/rgbd.cpp.s
 
 src/Libfreenect2Opencv.o: src/Libfreenect2Opencv.cpp.o
 
@@ -281,9 +281,9 @@ help:
 	@echo "... Simple_SLAM"
 	@echo "... edit_cache"
 	@echo "... rgbd"
-	@echo "... Examles/rgbd.o"
-	@echo "... Examles/rgbd.i"
-	@echo "... Examles/rgbd.s"
+	@echo "... Examples/rgbd.o"
+	@echo "... Examples/rgbd.i"
+	@echo "... Examples/rgbd.s"
 	@echo "... src/Libfreenect2Opencv.o"
 	@echo "... src/Libfreenect2Opencv.i"
 	@echo "... src/Libfreenect2Opencv.s"

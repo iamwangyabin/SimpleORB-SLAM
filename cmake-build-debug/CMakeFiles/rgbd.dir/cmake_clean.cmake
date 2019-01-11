@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rgbd.dir/Examles/rgbd.cpp.o"
+  "CMakeFiles/rgbd.dir/Examples/rgbd.cpp.o"
   "../Examples/rgbd.pdb"
   "../Examples/rgbd"
 )
